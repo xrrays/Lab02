@@ -2,7 +2,7 @@
 =========================================================
 Name        : news.html
 Assignment  : Lab 2 Exercise C
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
+Author(s)   : Rayyan Ahmed, Muhammed Umar Khan
 Submission  : May 21, 2030
 Description : A simple HTML file.
 =========================================================
@@ -11,7 +11,11 @@ Description : A simple HTML file.
 <html>
 <head>
     <title>Comprehensive HTML Page</title>
-	<!--Copy and paste remaining tags of the head section from images.html file.-->
+    <meta charset="UTF-8">
+    <meta name="description" content="An HTML example with img tags">
+    <meta name="keywords" content="HTML, Web Development, Example, img">
+    <meta name="author" content="Rayyan Ahmed, Muhammed Umar Khan">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -31,7 +35,7 @@ Description : A simple HTML file.
         <article>
             <h2>Article Title</h2>
 			
-			<p>This is a paragraph in an article section. It demonstrates text formatting, like bold, italic, and marked text.</p>
+			<p>This is a paragraph in an article section. It demonstrates text formatting, like <strong>bold</strong>, <i>italic</i>, and <mark>marked text</mark>.</p>
 			<!-- To emphasize specific words in the paragraph, apply appropriate HTML tags: 
 			<strong> or <b> for bold text, 
 			<em> or <i> for italic text, and
@@ -52,12 +56,22 @@ Description : A simple HTML file.
         <ol>
             <li>First item</li>
             <li>Second item</li>
+            <ol>
+                <li>First Sub-Item</li>
+                <li>Second Sub-Item</li>
+                <li>Third Sub-Item</li>
+            </ol>
 			<!--Make a sub-ordered list here-->
             <li>Third item</li>
         </ol>
         <p>Unordered List:</p>
         <ul>
             <li>Bullet item</li>
+            <ul>
+                <li>First Sub-Item</li>
+                <li>Second Sub-Item</li>
+                <li>Third Sub-Item</li>
+            </ul>
 			<!--Make a sub-unordered list here-->
             <li>Another bullet item</li>
             <li>Yet another bullet item</li>
@@ -74,7 +88,7 @@ Description : A simple HTML file.
             <dt>HTML</dt>
             <dd>Hypertext Markup Language.</dd>
 			<dt>CSS</dt>
-            <dd><!--Add CSS definition here--></dd>
+            <dd>"Casscading Style Sheets" is a scripting language used, mainly, for its uses as a styling language.</dd>
         </dl>
 		
         
@@ -104,21 +118,22 @@ Description : A simple HTML file.
 			<tfoot>
 				<tr>
 					<td>Total</td>
-					<td><!--Put column total here--></td>
-					<td><!--Put column total here--></td>
+					<td>$3800</td>
+					<td>$2700</td>
 				</tr>
 			</tfoot>
         </table>
 		
 		<h3>Images:</h3>
         <p>Adding an image:</p>
-        <img src="example.jpg" alt="Example Image"> <!--Fix addressing issue-->
+        <img src="./images/example.jpg" alt="Example Image"> <!--Fix addressing issue-->
     </section>
 
     <footer>
-        <p>Footer content, like contact info or copyrights.</p>
+        <!--<p>Footer content, like contact info or copyrights.</p>  --!>
 		<!--Comment out the above p tag and add a new p tag under this comment.
-			The new p tag must contain {Copy right + your names}.-->	
+			The new p tag must contain {Copy right + your names}.-->
+        <p>Copyright Rayyan Ahmed and Muhammed Umar Khan</p>	
     </footer>
 </body>
 </html>
